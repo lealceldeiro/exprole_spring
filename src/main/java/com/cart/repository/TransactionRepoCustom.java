@@ -10,5 +10,7 @@ import com.cart.model.Customer;
 //import com.cart.model.OrderDetail;
 
 public interface TransactionRepoCustom {
-	public String getAllTransaction();
+    public default String getAllTransaction() {
+	    return "Not implemented yet!";
+    }
 }
